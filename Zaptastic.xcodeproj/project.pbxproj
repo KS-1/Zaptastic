@@ -18,6 +18,14 @@
 		F505B1FA2855637100A5706F /* ZaptasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B1F92855637100A5706F /* ZaptasticTests.swift */; };
 		F505B2042855637100A5706F /* ZaptasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B2032855637100A5706F /* ZaptasticUITests.swift */; };
 		F505B2062855637100A5706F /* ZaptasticUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B2052855637100A5706F /* ZaptasticUITestsLaunchTests.swift */; };
+		F505B2152855656300A5706F /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F505B2142855656300A5706F /* Starfield.sks */; };
+		F505B2182855778300A5706F /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = F505B2162855778300A5706F /* enemy-types.json */; };
+		F505B2192855778300A5706F /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = F505B2172855778300A5706F /* waves.json */; };
+		F505B21B2855780400A5706F /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B21A2855780400A5706F /* EnemyType.swift */; };
+		F505B21D2855784400A5706F /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B21C2855784400A5706F /* Wave.swift */; };
+		F505B21F285578B000A5706F /* Bundle-Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B21E285578B000A5706F /* Bundle-Decoding.swift */; };
+		F505B22128557AE900A5706F /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505B22028557AE900A5706F /* EnemyNode.swift */; };
+		F505B2232857969F00A5706F /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F505B2222857969F00A5706F /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,14 @@
 		F505B1FF2855637100A5706F /* ZaptasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaptasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F505B2032855637100A5706F /* ZaptasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaptasticUITests.swift; sourceTree = "<group>"; };
 		F505B2052855637100A5706F /* ZaptasticUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaptasticUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F505B2142855656300A5706F /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		F505B2162855778300A5706F /* enemy-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "enemy-types.json"; path = "../../../../Downloads/zaptastic/enemy-types.json"; sourceTree = "<group>"; };
+		F505B2172855778300A5706F /* waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waves.json; path = ../../../../Downloads/zaptastic/waves.json; sourceTree = "<group>"; };
+		F505B21A2855780400A5706F /* EnemyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		F505B21C2855784400A5706F /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		F505B21E285578B000A5706F /* Bundle-Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoding.swift"; sourceTree = "<group>"; };
+		F505B22028557AE900A5706F /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		F505B2222857969F00A5706F /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +122,18 @@
 				F505B1E12855637000A5706F /* GameScene.sks */,
 				F505B1E32855637000A5706F /* Actions.sks */,
 				F505B1E52855637000A5706F /* GameScene.swift */,
+				F505B2222857969F00A5706F /* Explosion.sks */,
+				F505B22028557AE900A5706F /* EnemyNode.swift */,
 				F505B1E72855637000A5706F /* GameViewController.swift */,
 				F505B1E92855637000A5706F /* Main.storyboard */,
 				F505B1EC2855637100A5706F /* Assets.xcassets */,
+				F505B2142855656300A5706F /* Starfield.sks */,
 				F505B1EE2855637100A5706F /* LaunchScreen.storyboard */,
+				F505B2162855778300A5706F /* enemy-types.json */,
+				F505B2172855778300A5706F /* waves.json */,
+				F505B21A2855780400A5706F /* EnemyType.swift */,
+				F505B21C2855784400A5706F /* Wave.swift */,
+				F505B21E285578B000A5706F /* Bundle-Decoding.swift */,
 			);
 			path = Zaptastic;
 			sourceTree = "<group>";
@@ -235,11 +259,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F505B2192855778300A5706F /* waves.json in Resources */,
+				F505B2152855656300A5706F /* Starfield.sks in Resources */,
+				F505B2182855778300A5706F /* enemy-types.json in Resources */,
 				F505B1EB2855637000A5706F /* Main.storyboard in Resources */,
 				F505B1E22855637000A5706F /* GameScene.sks in Resources */,
 				F505B1ED2855637100A5706F /* Assets.xcassets in Resources */,
 				F505B1F02855637100A5706F /* LaunchScreen.storyboard in Resources */,
 				F505B1E42855637000A5706F /* Actions.sks in Resources */,
+				F505B2232857969F00A5706F /* Explosion.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F505B21F285578B000A5706F /* Bundle-Decoding.swift in Sources */,
+				F505B22128557AE900A5706F /* EnemyNode.swift in Sources */,
 				F505B1E62855637000A5706F /* GameScene.swift in Sources */,
+				F505B21D2855784400A5706F /* Wave.swift in Sources */,
 				F505B1E82855637000A5706F /* GameViewController.swift in Sources */,
+				F505B21B2855780400A5706F /* EnemyType.swift in Sources */,
 				F505B1E02855637000A5706F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,8 +479,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,7 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -474,8 +507,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,7 +520,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
